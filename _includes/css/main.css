@@ -85,7 +85,7 @@ header {
     color: #fff;
     background: #{{ site.color.primary }}; */
     align-items: center;
-    background-image: url(/img/auditorium.jpeg);
+    background-image: url(https://lh3.googleusercontent.com/pw/AL9nZEXMcb28UTslZsGTIGRDAUrnEYCnkdTUnODVgi4-fdJNYTzG3S0NXqMZtyymFZNEQ4BiE6vcQKob9RuVsI5dpTRsgfRxS-vb8W3u0qgac2YI2tWvNQrhh_HUQJUyzFeLgp5Lvd9eF1jwYzTPzT0AW_KaPQ=w2368-h1580-no?authuser=0);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -285,7 +285,7 @@ section.success {
     font-size: 20px;
     color: #fff; */
     color: #fff;
-    text-align: center; 
+    text-align: center;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {

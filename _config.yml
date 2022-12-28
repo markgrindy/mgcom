@@ -2,11 +2,11 @@
 title: Woolf.cc
 email: hello@woolf.cc
 url: https://woolf.cc
-description: "Current draft full of howlers? Whether it's a speech, opinion piece, blog post, or book, Woolf will make it sing."
+description: "Current draft got some howlers? Whether it's a speech, opinion piece, blog post, or book, Woolf will make it sing."
 keywords: "Ebook Writing, Line Editing, Copy Editing, Editing, Proofreading, Speech Writing, Speechwriting, Blog Development, RFP Writing, Writing, Speeches,
 Book Writing, Blog Writing, Ghostwriting, Book Editing, Toast Speech, Editorial Writing"
-offering: 'Research • Writing • Editing'
-skills: "Strategic communications consulting, specializing in speeches and opinion pieces"
+offering: 'Collaborative executive communications consulting, specializing in speeches, opinion pieces, and narrative development.'
+skills: 'Research. Writing. Editing.'
 meta_author: Grindy Mark
 
 # Google webmaster tools
@@ -32,12 +32,26 @@ color:
   secondary: 007cc3 # nav bg
   secondary-dark: 398bb9 # nav current section bg, (c)
 
-# Footer settings
+# Footer settings (to remove section from site, simply leave value blank)
 footer:
-  copyright: Woolf, LLC
-  location: Made in USA
-  social: Connect
-  tagline: Woolf.cc
+  copyright: 'Woolf, LLC,'
+  address:
+  social:
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: ''
+
+# Proofpoints
+proofpoint-heading: "What they've said"
+proofpoint-tagline: "As your writing partner, Mark brings high-level experience from the C-suite and the presidential campaign trail. Here's what clients and colleagues have said about his work:"
+proofpoints:
+  - quote: '"You are the team behind the team that makes me look good." —Fortune 500 CEO'
+  - quote: '"Wow. I&#39;m a regular Bill Shakespeare! ;) Thx for making me sound compelling." —Partner in nine-figure venture funds'
+  - quote: '"So fun, Mark! You guys are major pros. Such a pleasure working with you" —Creator and host of multiple top national radio shows and podcasts'
+  - quote: '"AMAZING hire." —U.S. Senate speechwriter.'
+  - quote: '"The ending had me in tears." —Vice Presidential speechwriter'
+  - quote: '"Mark, you are channeling me—these edits are equal parts sharp and snarky, and they&#39;re all right on." —Presidential speechwriter'
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
@@ -47,14 +61,6 @@ social:
   #   url: http://instagram.com/#
   - title: linkedin
     url: https://www.linkedin.com/in/markgrindy/
-
-# Postal address (add as many lines as necessary)
-address:
-  - line: 'Proudly based in'
-  - line: 'Duluth, Minnesota.'
-
-# Tagline content
-tagline: 'A writing partner that brings high-level executive communications experience from Fortune 50 C-suites and the presidential campaign trail.'
 
 # Build settings
 markdown: kramdown

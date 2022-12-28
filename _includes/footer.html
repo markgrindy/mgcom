@@ -3,14 +3,25 @@
   <div class="footer-above">
     <div class="container">
       <div class="row">
+        {% if site.footer.location %}
         <div class="footer-col col-md-4">
           <h3>{{ site.footer.location }}</h3>
           <p>
-            {% for adress in site.address %}
-            {{ adress.line }} <br>
+            {% for address in site.address %}
+            {{ address.line }} <br>
             {% endfor %}
           </p>
         </div>
+        {% endif %}
+        <div class="footer-col col-lg-12">
+          <h3>{{ site.proofpoint-heading }}</h3>
+          <p style="max-width: 300px;margin:0 auto;">A few words about Mark's work from past clients and colleagues:</p>
+        </div>
+        {% for line in site.proofpoints %}
+        <div class="footer-col col-md-4">
+          <p>{{ line.quote }}</p>
+        </div>
+        {% endfor %}
         {% if site.footer.social %}
         <div class="footer-col col-md-4">
           <h3>{{ site.footer.social }}</h3>
@@ -33,15 +44,20 @@
       </div>
     </div>
   </div>
+  {% if site.footer.copyright %}
   <div class="footer-below">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
-          Copyright &copy; {{ site.footer.copyright }} 20{{ site.time | date: '%y' }}
+        <div class="col-lg-12" style="text-transform:uppercase">
+          Woolf Comms. Consulting <br>
+          Proudly based in Minnesota, USA<br>
+          Free global delivery of all ideas<br>
+          &copy; {{ site.footer.copyright }} 20{{ site.time | date: '%y' }}
         </div>
       </div>
     </div>
   </div>
+  {% endif %}
 </footer>
 
 <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->

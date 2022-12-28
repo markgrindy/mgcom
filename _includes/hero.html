@@ -1,4 +1,4 @@
-<span id="word-count"></span><span id="cursor" style="margin-left: -3px">|</span>
+<span id="wordcount"></span><span id="cursor" style="margin-left: -3px">|</span>
 <script>
 
   window.onload = function() {
@@ -15,14 +15,14 @@
 
     var txt = "We think.                                 We draft.                       And       we revise until it's right.";
     var txt = "Only you            can share       your idea       with the world.                   But              that doesn't mean you need          to develop it   on your own. ";
-    var txt = "Only you            can share  your idea       with the world.                   But              we can help you     get it ready  for primetime. ";
-    // var txt = "test."
+    var txt = "Only you            can share your idea       with the world.                   We're here       to help you get it ready  for primetime. ";
+    var txt = "Only you            can share your idea       with the world.                   Let's work together      to get it ready  for primetime. ";
 
     setTimeout(function() { typeWriter(); },2400);
 
     function typeWriter() {
       if (i < txt.length) {
-        document.getElementById("word-count").innerHTML += txt.charAt(i);
+        document.getElementById("wordcount").innerHTML += txt.charAt(i);
         i++;
         setTimeout(typeWriter, typeSpeed);
       }
@@ -57,7 +57,7 @@
   }
 
   function displayWords(x) {
-    document.getElementById("word-count-"+t).innerHTML = x;
+    document.getElementById("wordcount-"+t).innerHTML = x;
   }
 
   function hideCursor() {

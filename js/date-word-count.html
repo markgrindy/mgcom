@@ -12,7 +12,7 @@
   {%- endif -%}
   <br/>
   Word count:
-  <span id="word-count"></span><span id="cursor" style="margin-left: -3px">|</span>
+  <span id="wordcount"></span><span id="cursor" style="margin-left: -3px">|</span>
 </p>
 
 <script>
@@ -38,7 +38,7 @@
 
     function typeWriter() {
       if (i < txt.length) {
-        document.getElementById("word-count").innerHTML += txt.charAt(i);
+        document.getElementById("wordcount").innerHTML += txt.charAt(i);
         i++;
         setTimeout(typeWriter, typeSpeed);
       }
@@ -70,7 +70,7 @@
   }
 
   function displayWords(wordCount) {
-    document.getElementById("word-count").innerHTML = wordCount;
+    document.getElementById("wordcount").innerHTML = wordCount;
   }
 
   function hideCursor() {

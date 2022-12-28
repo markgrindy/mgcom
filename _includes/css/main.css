@@ -72,8 +72,16 @@ hr.star-primary {
 }
 
 hr.star-primary:after {
-    color: #{{ site.color.secondary }};
     background-color: #fff;
+    color: #{{ site.color.secondary }};
+}
+
+div .row.hr {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.row.hr hr {
 }
 
 .img-centered {
@@ -134,34 +142,53 @@ p img.icon {
 }
 
 #leadership .bio-container {
-  /* border: 2px solid green; */
   display: flex;
+  flex-wrap: wrap;
 }
 
 #leadership .bio-left {
-  /* border: 2px red solid; */
-  flex: 0 1 1;
+}
+
+#leadership .bio-image {
   height: 9em;
   border-radius: 50%;
   margin-right: 1em;
-  /* width: 75%; */
 }
 
 #leadership .bio-right {
-  /* border: 2px red solid; */
   max-width: 506px;
   text-align: left;
+  flex-grow: 100;
 }
 
 #leadership .bio-flex {
-  flex-grow: 1;
+  flex-grow: 0;
 }
 
 #leadership, #portfolio, #about {
   min-height: 100vh;
 }
 
+@media(max-width:767px) {
+  header .intro-text .name {
+      font-size: 3em;
+  }
+  #leadership .bio-left {
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+  #leadership .bio-right {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
 @media(min-width:768px) {
+
+  #leadership .bio-flex {
+    flex-grow: 1;
+  }
+
     header .container {
         padding-top: 200px;
         padding-bottom: 100px;

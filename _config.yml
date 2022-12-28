@@ -1,8 +1,8 @@
 # Site settings
 title: Woolf.cc
-email: hello@woolf.cc
+email: mark@woolf.cc
 url: https://woolf.cc
-description: "Current draft got some howlers? Whether it's a speech, opinion piece, blog post, or book, Woolf will make it sing."
+description: "Only you can share your idea with the world. We help you get it ready for primetime."
 keywords: "Ebook Writing, Line Editing, Copy Editing, Editing, Proofreading, Speech Writing, Speechwriting, Blog Development, RFP Writing, Writing, Speeches,
 Book Writing, Blog Writing, Ghostwriting, Book Editing, Toast Speech, Editorial Writing"
 offering: 'Collaborative executive communications consulting, specializing in speeches, opinion pieces, and narrative development.'
@@ -20,6 +20,9 @@ bing_verify:
 # - disqus : replace contact form by disqus thread
 # - comment the line below if you want to stick with the default PHP contact form
 contact: static
+# if using formspree.io, enter the form's endpoint here:
+formspree: https://formspree.io/f/xyyagabl
+
 
 # If you use disqus you need disqus shortname
 # https://help.disqus.com/customer/portal/articles/466208

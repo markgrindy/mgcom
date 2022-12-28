@@ -3,20 +3,24 @@
   <div class="container portfolio-flex-grid">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2>Research•Writing•Editing</h2>
+        <h2>Research • Writing • Editing</h2>
         <!-- <hr class="star-primary"> -->
       </div>
     </div>
     <div class="portfolio-flex-row">
       {% for post in site.posts %}
       <div class="portfolio-flex-item portfolio-item">
-        <!-- commenting out the next line to remove modal pop-ups -->
+      <!-- commenting out the original verstion with modal pop-ups
         <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-          <!-- <div class="caption">
+      -->
+        <a class="portfolio-link" data-toggle="modal">
+          <!-- commenting out original version with icon only
+          <div class="caption">
             <div class="caption-content">
               <i class="fa fa-search-plus fa-3x"></i>
             </div>
           </div> -->
+          <!-- commenting out version 2.0 wiht text and icon
           <div class="caption">
             <div class="caption-content">
               <h3>{{ post.category }}</h3>
@@ -24,6 +28,7 @@
               <i class="fa fa-search-plus fa-3x"></i>
             </div>
           </div>
+          -->
           <div class="portfolio-image-text" style="background-image: url(img/portfolio/{{ post.img }})">
             <h3>{{ post.category }}</h3>
           </div>

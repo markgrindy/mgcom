@@ -1,8 +1,8 @@
 window.onload = function() {
 
   // Input an array of sentences for the program to write
-  // Ensure you create a span with id="word-count-#" for each
-  // starting with id="word-count-0"
+  // Ensure you create a span with id="wordcount-#" for each
+  // starting with id="wordcount-0"
   var textArray = [
     'Before we write for you... ',
     'We think with you',
@@ -21,7 +21,7 @@ window.onload = function() {
   var t = 0;
   //
   // for (t=0;t<textArray.length;t++) {
-  //   document.getElementById("word-count-"+t).innerHTML += 'test!';
+  //   document.getElementById("wordcount-"+t).innerHTML += 'test!';
   //
   // }
 
@@ -35,7 +35,7 @@ window.onload = function() {
 
   function typeWriter() {
     if (i < txt.length) {
-      document.getElementById("word-count-"+t).innerHTML += txt.charAt(i);
+      document.getElementById("wordcount-"+t).innerHTML += txt.charAt(i);
       i++;
       setTimeout(typeWriter, typeSpeed);
     }
@@ -67,7 +67,7 @@ function blinkingCursor(timeout) {
 }
 
 function displayWords(x) {
-  document.getElementById("word-count-"+t).innerHTML = x;
+  document.getElementById("wordcount-"+t).innerHTML = x;
 }
 
 function hideCursor() {
@@ -84,8 +84,8 @@ document.addEventListener('DOMContentLoaded', function() {
 }, false);
 
 // Input an array of sentences for the program to write
-// Ensure you create a span with id="word-count-#" for each
-// starting with id="word-count-0"
+// Ensure you create a span with id="wordcount-#" for each
+// starting with id="wordcount-0"
 const textArray = [
   'Before we write for you... ',
   'We think with you. ',
@@ -127,7 +127,7 @@ setTimeout(function() { hideCursor(); },5400);
 function typeWriter(txt,t) {
   console.log(txt);
   if (i < txt.length) {
-    document.getElementById("word-count-"+0).innerHTML += txt.charAt(i);
+    document.getElementById("wordcount-"+0).innerHTML += txt.charAt(i);
     i++;
     setTimeout(typeWriter, typeSpeed);
   }

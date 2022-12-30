@@ -218,6 +218,13 @@ p img.icon {
         transition: all .3s;
     }
 
+    .navbar-icon {
+      font-size: 1.35em;
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+      transition: all .3s;
+    }
+
     .navbar-fixed-top.navbar-shrink {
         padding: 10px 0;
     }
@@ -250,6 +257,20 @@ p img.icon {
     border: 0;
 }
 
+.nav-logo-container {
+  display: flex;
+  height: 60px;
+}
+
+.nav-logo-container div {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-icon {
+  height: 1.9em;
+}
+
 section {
     padding: 100px 0;
 }
@@ -272,6 +293,10 @@ section.success {
 
     section.first {
         padding-top: 75px;
+    }
+
+    .nav-logo-container {
+      padding-left: 15px;
     }
 }
 

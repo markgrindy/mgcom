@@ -6,4 +6,5 @@ _site
 .jekyll-metadata
 
 Gemfile.lock
-/scratchpaper 
+/scratchpaper
+test.html 

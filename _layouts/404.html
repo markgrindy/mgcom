@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body id="page-top" class="index">
+
+  <style>
+    div.fourohfour-outer {
+      align-items: center;
+      display: flex;
+      margin: 0 auto;
+      min-height: 100vh;
+    }
+    div.fourohfour-inner {
+      margin: 0 auto;
+      text-align: center;
+    }
+  </style>
+
+  <div class="fourohfour-outer">
+    <div class="fourohfour-inner">
+      {{ content }}
+    </div>
+  </div>
+
+  {% include modals.html %}
+  {% include js.html %}
+</body>
+
+</html>

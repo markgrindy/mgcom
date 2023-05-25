@@ -17,8 +17,9 @@
     var txt = "Only you            can share       your idea       with the world.                   But              that doesn't mean you need          to develop it   on your own. ";
     var txt = "Only you            can share your idea       with the world.                   We're here       to help you get it ready  for primetime. ";
     var txt = "Only you            can share your idea       with the world.                   Let's work together      to get it ready  for primetime. ";
+    var txt = "You've got         a big idea.                   Let's work together      to get it ready  for primetime. ";
 
-    setTimeout(function() { typeWriter(); },2400);
+    setTimeout(function() { typeWriter(); },100);
 
     function typeWriter() {
       if (i < txt.length) {
@@ -29,8 +30,8 @@
     }
 
     // after typewriting, cont. blinking cursor, then hide it
-    var delayBeforeBlinking = 1000 * 10;  // milliseconds
-    var blinkTime = 1000 * 25;            // milliseconds
+    var delayBeforeBlinking = 100 * 10;  // milliseconds
+    var blinkTime = 350 * 25;            // milliseconds
     var blinkTimeout = delayBeforeBlinking + blinkTime + 100;
     setTimeout(function() { blinkingCursor(blinkTime); },delayBeforeBlinking);
     setTimeout(function() { hideCursor(); },blinkTimeout);

@@ -1,8 +1,8 @@
 # Site settings
-brand: Woolf.cc
-title: Woolf Comms. Consulting - Woolf.cc
-email: mark@woolf.cc
-url: https://woolf.cc
+brand: Mark Grindy
+title: Mark Grindy - Writer for Hire
+email: mark@markgrindy.com
+url: https://markgrindy.com
 description: "You've got a big idea. Let's work together to get it ready for primetime."
 keywords: "Ebook Writing, Line Editing, Copy Editing, Editing, Proofreading, Speech Writing, Speechwriting, Blog Development, RFP Writing, Writing, Speeches,
 Book Writing, Blog Writing, Ghostwriting, Book Editing, Toast Speech, Editorial Writing"
@@ -38,7 +38,7 @@ color:
 
 # Footer settings (to remove section from site, simply leave value blank)
 footer:
-  copyright: 'Woolf, LLC,'
+  copyright: 'Mark Grindy'
   address:
   social:
 
